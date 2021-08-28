@@ -234,9 +234,14 @@ public class GameStage extends Stage implements Observable {
 		}
 
 		@Override
-		public boolean scrolled(int amount) {
-			cameraController.processZoom(amount);
-			return true;
+		public boolean scrolled(float amountX, float amountY) {
+		        /* scrolled prototype changed at 1.9.12: scrolled(int amount) -> scrolled(float amountX, float amountY) for horizontal scrolling;
+		         * to match the old behaviour, use the amountY argument
+                         *
+                         * more info at https://github.com/libgdx/libgdx/pull/6154
+                         */
+		        cameraController.processZoom(amountY);
+		        return true;
 		}
 
 		public void update(float deltaTime) {
