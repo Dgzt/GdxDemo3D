@@ -52,7 +52,7 @@ If `make` is not available, on can use `gradlew` directly:
 
 If the game screen appears black, it's probably because the scene is hidden behind the game editor (it can occur
 in early versions of the demo on some configurations, e.g. on MacOSX and possibly some mobiles).
-In that case, the <ESC> key allows you to leave the game editor.
+In that case, the `<ESC>` key allows you to leave the game editor.
 
 ## IDE support ##
 
