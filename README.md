@@ -35,14 +35,24 @@ cd bte2
 ```
 
 Next go into your `GdxDemo3D` folder.
-`cd GdxDemo3D`
+```
+cd GdxDemo3D
+```
 
 On a system with the `make` command available (virtually all POSIX systems; even on recent Windows systems, `make` can be installed
 with the [chocolatey](https://chocolatey.org/) package manager)
-`make start`
+```
+make start
+```
 
 If `make` is not available, on can use `gradlew` directly:
-`./gradlew desktop:run`
+```
+./gradlew desktop:run
+```
+
+If the game screen appears black, it's probably because the scene is hidden behind the game editor (it can occur
+in early versions of the demo on some configurations, e.g. on MacOSX and possibly some mobiles).
+In that case, the <ESC> key allows you to leave the game editor.
 
 ## IDE support ##
 
