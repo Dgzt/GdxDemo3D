@@ -22,19 +22,7 @@ Objects in the world can be modified directly in Blender and exported into the g
 
 ## To get started ##
 
-First of all one needs to retrieve an up-to-date version of the Behaviour Tree Editor v2 (bte2) project.
-Original Piotr Jastrzebski's [repo](https://github.com/piotr-j/bte2) being stale at the time of writing (no code update since 5 years at the time of writing),
-the recommended fork is [Berstanio's](https://github.com/Berstanio/bte2)
-
-Retrieve it, and install it in your local gradle cache with the following commands:
-
-```
-git clone git@github.com:Berstanio/bte2.git
-cd bte2
-./gradlew install
-```
-
-Next go into your `GdxDemo3D` folder.
+Go into your `GdxDemo3D` folder.
 ```
 cd GdxDemo3D
 ```
