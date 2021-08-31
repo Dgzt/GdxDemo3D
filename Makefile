@@ -1,4 +1,5 @@
-GRADLE=./gradlew
+include detect_os.mk
+GRADLE=.$(sep)gradlew
 .PHONY: default compile compile-all clean run start
 
 default: compile
