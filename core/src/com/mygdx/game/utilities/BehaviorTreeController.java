@@ -49,6 +49,7 @@ public class BehaviorTreeController {
 	
 	private static AIEditor createDogBTEditor() {
 		AIEditor editor = new AIEditor();
+		editor.getWindow().setSize(800, 600);
 		// add default task classes to task drawer with default tags
 		editor.addDefaultTaskClasses();
 		editor.setUpdateStrategy(new AIEditor.BehaviorTreeStepStrategy() {
